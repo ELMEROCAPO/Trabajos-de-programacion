@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	Ram1 := 100
+	pase1 := &Ram1
+	pase2 := &pase1
+
+	if *pase1 == Ram1 {
+		fmt.Println("La direccion de memopria es Ram1")
+
+	}
+	if **pase2 == *pase1 {
+		fmt.Println("La direccion de es la misma a la anterior")
+	}
+}
