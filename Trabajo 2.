@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var ram1 *int
+	if ram1 == nil {
+		fmt.Println("ram1", ram1, "Es nil")
+
+	} else {
+		fmt.Println(ram1, "No es nil")
+	}
+}
